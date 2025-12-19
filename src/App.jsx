@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resp = await fetch("http://localhost:5173/Stats.json");
+        const resp = await fetch("/Stats.json");
         const st = await resp.json();
         setStats(st);
       } catch (err) {
