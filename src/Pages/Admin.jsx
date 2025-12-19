@@ -12,7 +12,9 @@ const Admin = () => {
 
   const fetchScrambles = async () => {
     try {
-      const resp = await fetch("http://localhost:3000/api/v1/scrambles");
+      const resp = await fetch(
+        `${import.meta.env.VITE_API_BASE_URL}/api/v1/scrambles`
+      );
       const result = await resp.json();
 
       if (result.status === "success") {
@@ -27,16 +29,19 @@ const Admin = () => {
     const userId = localStorage.getItem("userId");
 
     try {
-      const resp = await fetch("http://localhost:3000/api/v1/scrambles", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          scramble: data.scramble,
-          userId: userId,
-        }),
-      });
+      const resp = await fetch(
+        `${import.meta.env.VITE_API_BASE_URL}/api/v1/scrambles`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            scramble: data.scramble,
+            userId: userId,
+          }),
+        }
+      );
 
       if (resp.ok) {
         const result = await resp.json();
@@ -53,7 +58,9 @@ const Admin = () => {
 
     try {
       const resp = await fetch(
-        `http://localhost:3000/api/v1/scrambles/${id}?userId=${userId}`,
+        `${
+          import.meta.env.VITE_API_BASE_URL
+        }/api/v1/scrambles/${id}?userId=${userId}`,
         {
           method: "DELETE",
         }

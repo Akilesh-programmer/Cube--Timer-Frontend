@@ -16,7 +16,7 @@ const History = () => {
 
       try {
         const resp = await fetch(
-          `http://localhost:3000/api/v1/solves/user/${userId}`
+          `${import.meta.env.VITE_API_BASE_URL}/api/v1/solves/user/${userId}`
         );
         const result = await resp.json();
         setSolves(result.data.solves);
@@ -29,9 +29,12 @@ const History = () => {
 
   const deleteSolve = async (id) => {
     try {
-      const resp = await fetch(`http://localhost:3000/api/v1/solves/${id}`, {
-        method: "DELETE",
-      });
+      const resp = await fetch(
+        `${import.meta.env.VITE_API_BASE_URL}/api/v1/solves/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
 
       if (resp.ok) {
         setSolves(solves.filter((item) => item._id !== id));
@@ -49,7 +52,7 @@ const History = () => {
   const onSubmit = async (data) => {
     try {
       const resp = await fetch(
-        `http://localhost:3000/api/v1/solves/${editId}`,
+        `${import.meta.env.VITE_API_BASE_URL}/api/v1/solves/${editId}`,
         {
           method: "PUT",
           headers: {
