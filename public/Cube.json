@@ -1,0 +1,150 @@
+{
+  "cubeTypes": ["3x3", "2x2", "4x4", "Pyraminx", "Skewb"],
+
+  "scrambleDashboard": {
+    "selectedCubeType": "3x3",
+    "currentScramble": "R U R' U' F2 U2 R2 U' R2 F'",
+    "previousScrambles": [
+      {
+        "id": 1,
+        "scramble": "U2 R' F U R2 U' F2 U R2",
+        "contributor": "User A"
+      },
+      {
+        "id": 2,
+        "scramble": "R U2 R' F2 R2 U R' U2",
+        "contributor": "User B"
+      }
+    ]
+  },
+
+  "timerPage": {
+    "selectedCubeType": "3x3",
+
+    "session": {
+      "id": "S1",
+      "name": "Evening Practice",
+      "averages": {
+        "ao3": 12.35,
+        "ao5": 14.2,
+        "ao12": 15.82,
+        "ao100": 18.5
+      }
+    },
+
+    "timer": {
+      "currentTime": 0.0,
+      "isRunning": false,
+      "lastSolve": {
+        "time": 12.93,
+        "penalty": "+2",
+        "finalTime": 14.93
+      }
+    },
+
+    "solves": [
+      {
+        "id": 1,
+        "scramble": "R U R' U' R2 U F U2",
+        "time": 13.2,
+        "penalty": "DNF",
+        "finalTime": null,
+        "date": "2025-12-09T19:20:00Z"
+      },
+      {
+        "id": 2,
+        "scramble": "U2 F' R2 U R' F2 U'",
+        "time": 12.93,
+        "penalty": "+2",
+        "finalTime": 14.93,
+        "date": "2025-12-09T19:23:00Z"
+      },
+      {
+        "id": 3,
+        "scramble": "R' U2 R U R2 U' F'",
+        "time": 11.82,
+        "penalty": null,
+        "finalTime": 11.82,
+        "date": "2025-12-09T19:26:00Z"
+      }
+    ]
+  },
+
+  "leaderboard": {
+    "filterByCountry": "India",
+
+    "yourRank": {
+      "rank": 42,
+      "average": 13.52,
+      "ao3": 12.1,
+      "ao5": 13.7,
+      "ao12": 14.5,
+      "ao100": 16.3
+    },
+
+    "players": [
+      {
+        "rank": 1,
+        "name": "Player One",
+        "country": "USA",
+        "avg": 8.29,
+        "ao3": 7.8,
+        "ao5": 8.0,
+        "ao12": 8.5,
+        "ao100": 9.2
+      },
+      {
+        "rank": 2,
+        "name": "Player Two",
+        "country": "Japan",
+        "avg": 8.4,
+        "ao3": 7.95,
+        "ao5": 8.2,
+        "ao12": 8.65,
+        "ao100": 9.5
+      },
+      {
+        "rank": 10,
+        "name": "Player Ten",
+        "country": "India",
+        "avg": 10.5,
+        "ao3": 9.8,
+        "ao5": 10.2,
+        "ao12": 10.7,
+        "ao100": 11.6
+      }
+    ]
+  },
+
+  "solveHistory": {
+    "selectedCubeType": "3x3",
+    "filterByDate": null,
+
+    "history": [
+      {
+        "sno": 1,
+        "scramble": "F R2 U' R' U2 R F2 U R",
+        "time": 14.25,
+        "date": "2025-12-08",
+        "+2": false,
+        "dnf": false
+      },
+      {
+        "sno": 2,
+        "scramble": "U F' R2 U' R2 F2 U'",
+        "time": 15.0,
+        "date": "2025-12-09",
+        "+2": true,
+        "dnf": false
+      },
+      {
+        "sno": 3,
+        "scramble": "R U2 F2 U R2 U'",
+        "time": null,
+        "date": "2025-12-09",
+        "+2": false,
+        "dnf": true
+      }
+    ]
+  }
+}

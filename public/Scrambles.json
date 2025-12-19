@@ -1,0 +1,7 @@
+[
+  { "id": 1, "scramble": "R U R' U' L' U L U' F' U F U' R U R' U'" },
+  { "id": 2, "scramble": "F R U' R' U' R U R' F' R U R' U' R' F R F'" },
+  { "id": 3, "scramble": "U R U' L' U R' U' L" },
+  { "id": 4, "scramble": "R' D' R D R' D' R D" },
+  { "id": 5, "scramble": "L U L' U L U2 L'" }
+]

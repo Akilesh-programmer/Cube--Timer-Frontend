@@ -1,0 +1,6 @@
+[
+  { "type": "ao3", "current": "12.45", "best": "11.23" },
+  { "type": "ao5", "current": "13.78", "best": "12.01" },
+  { "type": "ao12", "current": "14.21", "best": "13.45" },
+  { "type": "ao100", "current": "15.08", "best": "14.67" }
+]
